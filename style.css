@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --primary-color: #1e6bf0;
+  --secondary-color: #8fc6ed;
+  --icon-color: #064bb2;
+  --text-color: #2c2b2b;
+  --clear-btn: #eaa3a3;
+  --error-text: #e70d0d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 350px;
+  width: 800px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  padding: 40px;
+}
+.userInput,
+.userResult {
+  display: flex;
+  /* grid-template-column: 1fr 1fr 1fr; */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 40px;
+  text-align: center;
+}
+input {
+  margin-top: 15px;
+  padding: 10px 10px;
+  border: none;
+  background-color: #9fd8f0;
+  border-radius: 10px;
+  outline: none;
+}
+i {
+  color: var(--icon-color);
+}
+.btn {
+  width: 60%;
+  padding: 10px 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px 10px rgar(0, 0, 0, 0.3);
+  margin: 20px 160px;
+  background-color: var(--secondary-color);
+}
+#submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 500;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+#submit:hover,
+#clearBtn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit:hover i {
+  transform: translateX(4px);
+}
+#submit i {
+  transition: transform 0.2s;
+}
+.spinner {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.error-msg {
+  text-align: center;
+  color: var(--error-text);
+  font-size: 500;
+  font-weight: 600px;
+}
+/* result div design */
+.userResult {
+  margin-top: 30px;
+  margin-left: 20px;
+  gap: 50px;
+}
+.resdiv {
+  padding: 17px 90px;
+  background-color: var(--secondary-color);
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#clearBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right:;
+}
+
+.hidden {
+  /* visibility: hidden; */
+  display: none;
+}
