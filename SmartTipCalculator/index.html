@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleTipCalculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="#" class="billCalculator">
+      <div class="container">
+        <!-- User Inputs -->
+        <section class="userInputContainer">
+          <div class="userInput">
+            <div class="inputs" id="bill">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <label for="BillAmount">Bill Amount</label>
+              <input
+                type="text"
+                id="BillAmount"
+                placeholder="Enter bill amount"
+              />
+            </div>
+            <div class="inputs" id="TipPct">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <label for="Tip">Enter Tip Percentage</label>
+              <input type="text" id="Tip" placeholder="Tip percentage" />
+            </div>
+            <div class="inputs" id="noOfUser">
+              <i class="fa-solid fa-user"></i>
+              <label for="user">Number of User</label>
+              <input type="text" id="user" placeholder="Enter number of user" />
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn" id="submit">
+            <span>Submit</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="error-msg"></p>
+        </section>
+
+        <!-- result screen -->
+        <section class="result hidden">
+          <div class="userResult">
+            <div class="Totalbill">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <label for="totalBillAmount">Total Bill Amount</label>
+              <div class="resdiv" id="totalBillAmount"></div>
+            </div>
+            <div class="totalTipPerUser">
+              <!-- <i class="fa-solid fa-user"></i> -->
+              <i class="fa-solid fa-dollar-sign"></i>
+              <label for="totalTip">Total tip</label>
+              <div class="resdiv" id="totalTip"></div>
+            </div>
+            <div class="TipPerUser">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <label for="TipPerUser">Tip per user</label>
+              <div class="resdiv" id="TipPerUser"></div>
+            </div>
+          </div>
+          <!-- clear button -->
+          <button type="button" class="btn" id="clearBtn">
+            <span>Submit Again</span>
+          </button>
+        </section>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ae8dfe5513.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
